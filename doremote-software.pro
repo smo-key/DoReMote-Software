@@ -3,7 +3,7 @@ QT += gui
 QT += bluetooth
 QT += multimedia
 
-win:LIBS += -luser32
+LIBS += -luser32
 
 TARGET = DoReMote-Software-QT
 CONFIG += console

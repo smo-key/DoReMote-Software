@@ -56,6 +56,9 @@ int main(int argc, char *argv[])
     //BLE Device instantiation
     Device ble;
     ble.startDeviceDiscovery();
+    QString message = ble.getUpdate();
+    qDebug() << message;
+    QVariant v = ble.getDevices();
 
     qDebug() << "Discovery started!";
 
